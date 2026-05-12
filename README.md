@@ -1,1 +1,1 @@
-index.htnl
+index.html
