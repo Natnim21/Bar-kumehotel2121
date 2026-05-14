@@ -1086,3 +1086,39 @@ body {
 .service-card img:hover {
     transform: scale(1.02);
 }
+/*home3*/
+/* ============================================
+   FIX SHOWCASE BACKGROUND IMAGE
+   ============================================ */
+
+/* Fix the main background image */
+#showcase {
+    background-image: url('home3.jpg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    width: 100% !important;
+    min-height: 500px !important;
+    height: auto !important;
+}
+
+/* Make sure the content stays readable */
+#showcase .showcase-content {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Optional: adds dark overlay for text readability */
+    padding: 80px 20px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #showcase {
+        min-height: 400px !important;
+        background-position: center !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #showcase {
+        min-height: 350px !important;
+    }
+}
