@@ -1086,3 +1086,48 @@ body {
 .service-card img:hover {
     transform: scale(1.02);
 }
+/*showcase*/
+/* ============================================
+   FIX HOME1.JPG IMAGE - HISTORY SECTION
+   ============================================ */
+
+/* Fix the history section background image */
+#home-info .info-img {
+    background-image: url('home1.jpg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 400px !important;
+}
+
+/* Make sure the container handles the image properly */
+#home-info {
+    height: auto !important;
+    min-height: 400px !important;
+    overflow: hidden !important;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 768px) {
+    #home-info .info-img {
+        min-height: 300px !important;
+        background-position: center !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #home-info .info-img {
+        min-height: 250px !important;
+    }
+}
+
+/* If home1.jpg is an <img> tag and not a background image */
+.info-img img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: cover !important;
+}
