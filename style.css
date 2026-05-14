@@ -1037,3 +1037,52 @@ body {
         width: 100%;
     }
 }
+
+/*sevice*/
+/* ============================================
+   FIX SERVICE PAGE IMAGES - FIT PERFECTLY ON ALL SCREENS
+   ============================================ */
+
+/* Make all service card images responsive */
+.service-card img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    display: block !important;
+    border-radius: 8px !important;
+}
+
+/* For different screen sizes - adjust image heights */
+@media (min-width: 1024px) {
+    .service-card img {
+        height: 220px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .service-card img {
+        height: 200px !important;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .service-card img {
+        height: 180px !important;
+    }
+}
+
+@media (max-width: 479px) {
+    .service-card img {
+        height: 160px !important;
+    }
+}
+
+/* Optional: Add smooth transition */
+.service-card img {
+    transition: transform 0.3s ease;
+}
+
+.service-card img:hover {
+    transform: scale(1.02);
+}
