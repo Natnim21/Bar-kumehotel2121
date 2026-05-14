@@ -406,6 +406,7 @@ media (min-width: 992px) and (max-width: 1199px) {
         font-size: 12px;
     }
 }*/
+/*
 *{
     margin: 0;
     padding: 0;
@@ -465,6 +466,7 @@ float: left;
 }
 
 /* FORCE HORIZONTAL ON ALL SCREENS - NO VERTICAL STACKING */
+/*
 @media (max-width: 768px) {
     #navbar {
         text-align: center;
@@ -496,6 +498,7 @@ float: left;
 }
 
 /* Extra small devices - still horizontal */
+/*
 @media (max-width: 576px) {
     #navbar h1 {
         font-size: 1.2rem;
@@ -509,6 +512,7 @@ float: left;
 }
 
 /* Very small phones - wrap but stay horizontal */
+/*
 @media (max-width: 480px) {
     #navbar .container {
         text-align: center;
@@ -695,4 +699,341 @@ color: tomato;
 .that{
     margin-left: 20px;
 }
-        
+       */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.7em;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+h1, h2, h3 {
+    padding: 20px;
+}
+p{
+    margin: 10px 0;
+}
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 30px 10px;
+}
+
+/* ========== NAVIGATION - HORIZONTAL ON ALL SCREENS ========== */
+#navbar{
+    background-color: #333;
+    color: white;
+    overflow: auto;
+}
+#navbar a {
+    color: white;
+}
+#navbar h1{
+    float: left;
+    padding-top: 0;
+}
+#navbar ul{
+    list-style: none;
+    float: right;
+}
+#navbar ul li {
+    float: left;
+}
+#navbar ul li a{
+    display: block;
+    padding: 25px;
+    text-align: center;
+}
+#navbar ul li a:hover, 
+#navbar ul li a.current{
+    background: #444;
+    color: #f7c08a;
+}
+
+/* Mobile navigation - still horizontal */
+@media (max-width: 768px) {
+    #navbar {
+        text-align: center;
+    }
+    #navbar h1 {
+        float: none;
+        display: inline-block;
+        padding: 10px 0;
+        font-size: 1.3rem;
+    }
+    #navbar ul {
+        float: none;
+        display: inline-block;
+    }
+    #navbar ul li {
+        float: left;
+    }
+    #navbar ul li a {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar ul li a {
+        padding: 10px 6px;
+        font-size: 11px;
+    }
+    #navbar h1 {
+        font-size: 1rem;
+    }
+}
+
+/* ========== SHOWCASE SECTION - FIX TEXT SIZE ========== */
+#showcase {
+    background: url('home3.jpg') no-repeat center center/cover;
+    height: auto;
+    min-height: 500px;
+}
+.lead{
+    color: white;
+}
+#showcase .showcase-content {
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.showcase-content h1 {
+    font-size: 48px;
+    line-height: 1.2em;
+}
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+    line-height: 1.5em;
+}
+
+/* Make welcome text fit on phones */
+@media (max-width: 768px) {
+    .showcase-content h1 {
+        font-size: 28px !important;
+    }
+    #showcase .showcase-content {
+        padding: 60px 15px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .showcase-content h1 {
+        font-size: 22px !important;
+    }
+    .showcase-content h2 {
+        font-size: 18px !important;
+    }
+}
+
+/* ========== HISTORY SECTION ========== */
+.logo {
+    color: orange;
+}
+.nb{
+    color: orange;
+}
+.nv{
+    background-color: #333;
+    color: white;
+    padding: 10px 10px;
+    margin-left: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.nv:hover{
+    background-color: orange;
+    color: white;
+}
+.bg-dark{
+    background-color:#444;
+    color: white;
+}
+#home-info {
+    height: auto;
+    overflow: auto;
+}
+#home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url('home1.jpg') no-repeat;
+    min-height: 400px;
+    background-size: cover;
+}
+#home-info .info-content {
+    float: right;
+    width: 50%;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+/* Make history responsive */
+@media (max-width: 768px) {
+    #home-info .info-img,
+    #home-info .info-content {
+        float: none;
+        width: 100%;
+        min-height: 300px;
+    }
+}
+
+/* ========== THREE BOXES - FORCE HORIZONTAL ON PHONES ========== */
+.box{
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    text-align: center;
+}
+.box i {
+    margin-bottom: 10px;
+}
+
+/* Force boxes horizontal on all screens */
+@media (max-width: 768px) {
+    .box {
+        float: left !important;
+        width: 33.33% !important;
+        display: block !important;
+    }
+}
+
+@media (max-width: 580px) {
+    .box {
+        width: 33.33% !important;
+        padding: 10px 5px !important;
+    }
+    .box h3 {
+        font-size: 14px !important;
+        padding: 10px !important;
+    }
+    .box p {
+        font-size: 10px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .box h3 {
+        font-size: 11px !important;
+    }
+    .box p {
+        font-size: 8px !important;
+    }
+}
+[5/14/2026 9:01 PM] Natanim N: /* ========== OTHER STYLES ========== */
+.am{
+    color: tomato;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 25px;
+}
+.bg-primary{
+    background-color: #f7c08a;
+    height: auto;
+    min-height: 263px;
+}
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+#contact-form textarea {
+    height: 200px;
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #f7c08a;
+}
+
+/* ========== FOOTER - FORCE AT BOTTOM ========== */
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#main-footer, #main {
+    text-align: center;
+    color: white;
+    background-color: #333;
+    padding: 20px;
+    margin-top: auto;
+}
+#main {
+    background-color: #444;
+}
+#features{
+    background: white;
+    overflow: auto;
+}
+.text {
+    color: orange;
+}
+.bn{
+    background-color: #444;
+    color: tomato;
+    text-align: center;
+}
+.sub-menu-1{
+    display: none;
+}
+.container ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #f7c08a;
+    color: tomato;
+}
+.that ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+    padding-top: 10px;
+}
+.that ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding-bottom: 1px dotted #fff;
+    border-radius: 0;
+    text-align: left;
+}
+.that{
+    margin-left: 20px;
+}
+
+/* ========== SERVICE PAGE RESPONSIVE ========== */
+.contain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.service-card {
+    width: calc(33.33% - 20px);
+    min-width: 250px;
+}
+@media (max-width: 768px) {
+    .service-card {
+        width: calc(50% - 20px);
+    }
+}
+@media (max-width: 480px) {
+    .service-card {
+        width: 100%;
+    }
+}
