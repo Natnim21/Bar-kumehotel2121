@@ -57,7 +57,7 @@ float: left;
 }
 
 #showcase {
-background: url('home1.jpg') no-repeat center center/cover;
+background: url('home3.jpg') no-repeat center center/cover;
 height: 600px;
 
 }
@@ -104,7 +104,7 @@ height: 600px;
 }
 .bg-dark{
     background-color:#444;
-    color: green;
+    color: black;
 }
 #home-info {
     height: 400px;
@@ -112,7 +112,7 @@ height: 600px;
 #home-info .info-img {
     float: left;
     width: 50%;
-    background: url('home1.jpg') no-repeat;
+    background: url('home.jpg') no-repeat;
     min-height: 100%;
 }
 #home-info .info-content {
