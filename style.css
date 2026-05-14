@@ -112,7 +112,7 @@ height: 600px;
 #home-info .info-img {
     float: left;
     width: 50%;
-    background: url('home3.jpg') no-repeat;
+    background: url('home.jpg') no-repeat;
     min-height: 100%;
 }
 #home-info .info-content {
